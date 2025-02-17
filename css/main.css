@@ -3,7 +3,6 @@
 
   * {
     margin: 0;
-    padding: 0;
     box-sizing: border-box;
   }
   
@@ -23,8 +22,11 @@
   
   /* Header & Navigation */
   .header {
-    background-color: #171717;
+    background-color: #000000;
     padding: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     position: sticky;
     top: 0;
   }
@@ -38,10 +40,26 @@
     margin: 0 auto;
   }
   
-  .logo {
-    font-size: 1.5rem;
-    font-weight: 700;
+  .logo { 
     color: #FCCD2A;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+  }
+
+  .logo > img {
+    width: 8%;
+    height: 8%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #FCCD2A;
+  }
+
+  .logo > span {
+    font-size: 1.5rem;
+    margin: 0px 10px;
+    font-weight: 600;
   }
   
   .nav-links {
@@ -80,7 +98,6 @@
   
   .hero-content h2 {
     font-size: 3rem;
-    margin-bottom: 0.5rem;
     text-align: left;
   }
   
@@ -95,7 +112,8 @@
 }
   
   .hero-content p {
-    margin-bottom: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     text-align: left;
   }
 
@@ -146,9 +164,25 @@
     cursor: pointer;
     font-weight: 600;
     margin: 10px 10px 10px 0px ;
+    border: #FCCD2A;
     
     transition: background-color 0.3s ease, transform 0.3s ease;
   }
+
+  .btn-see-more {
+    background-color: #FCCD2A;
+    color: #1b1b1b;
+    padding: 0.75rem 1.5rem;
+    border-radius: 15px;
+    cursor: pointer;
+    font-weight: 600;
+    margin: 10px 10px 10px 0px ;
+    border: #FCCD2A;
+    
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+
+
   
   .btn-download-CV:hover {
     background-color: #FCCD2A;
