@@ -379,7 +379,8 @@
     .resume-content {
       position: relative;
     }
-    .resume-item {
+    .resume-item {    /* =============================== Resume Section ==================================== */
+
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -414,7 +415,8 @@
       text-align: left;
       background-color: rgba(255, 255, 255, 0.1);
       padding: 0.8rem;
-      border-radius: 8px;
+      border-radius: 8px;    /* =============================== Resume Section ==================================== */
+
     }
     .item-detail h4 {
       margin: 0 0 0.5rem;
@@ -439,9 +441,45 @@
         display: none;
       }
     }
+    
+    /* =============================== Skills Section ==================================== */
 
-  
-  /* Skills Section */
+
+
+    .skills-header {
+      position: relative;
+      margin-bottom: 2rem;
+    }
+    .skills-header .big-header {
+      position: absolute;
+      left: 5.3em;
+      top: 0;
+      font-size: 7vw;
+      color: rgba(255, 255, 255, 0.1);
+      font-weight: 900;
+      padding: 1rem;
+      z-index: 0;
+    }
+    .skills-header h2 {
+      font-size: 3rem;
+      margin: 0;
+      position: relative;
+      z-index: 1;
+    }
+    .skills-header p {
+      font-size: 1rem;
+      color: #ccc;
+      text-align: center;
+      margin: 1rem 14rem;
+      padding: 1em;
+      position: relative;
+      z-index: 1;
+    }
+
+    .skills-header > h2 > span {
+      color: #FCCD2A;
+    }
+
   .skills-section {
     padding: 4rem 2rem;
     text-align: center;
@@ -449,30 +487,46 @@
   }
   
   .skills-section h2 {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
   
   .skills-container {
     display: grid;
-    gap: 2rem;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
+    grid-template-columns: repeat(3,1fr);
+    /* grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); */
+    gap: 1.5rem;
+    margin: 0em 1em ;
+    
   }
   
   .skill-card {
     background-color: #2a2a2a;
-    padding: 1.5rem;
-    border-radius: 8px;
-    transition: transform 0.3s ease;
+    border-radius: 15px;
+    padding: 3rem;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
   }
   
   .skill-card:hover {
     transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  }
+
+  .skill-card > img {
+    width: 2rem;
+    height: 2rem;
+    object-fit: cover;
+    margin-bottom: 1em;
+  }
+
+  .skill-card > h3 {
+    margin-bottom: 1em;
   }
   
-  /* Projects Section */
+/* =============================== Project Section ==================================== */
+
+
   .projects-section {
     padding: 4rem 2rem;
     text-align: center;
