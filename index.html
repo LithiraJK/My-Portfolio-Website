@@ -271,58 +271,168 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="projects-section">
-      <h2>Our Projects</h2>
-      <div class="projects-grid">
-        <!-- Project Card -->
-        <div class="project-card">
-          <img src="images/project1.jpg" alt="Project 1" />
-          <h3>Project Title 1</h3>
-          <p>
-            Short description about the project. Built with HTML, CSS,
-            JavaScript.
-          </p>
-        </div>
-        <!-- Project Card -->
-        <div class="project-card">
-          <img src="images/project2.jpg" alt="Project 2" />
-          <h3>Project Title 2</h3>
-          <p>
-            Short description about the project. Built with React & Node.js.
-          </p>
-        </div>
-        <!-- Project Card -->
-        <div class="project-card">
-          <img src="images/project3.jpg" alt="Project 3" />
-          <h3>Project Title 3</h3>
-          <p>
-            Short description about the project. Designed with Figma, built with
-            Next.js.
-          </p>
-        </div>
-        <!-- Add more project cards as needed -->
+    <section class="projects-section" id="projects">
+       <div class="projects-header">
+        <h1 class="big-header">Projects</h1>
+        <h2><span>Our</span> Projects</h2>
+        <p>
+          A small river named Duden flows by their place and supplies it with
+          the necessary regelialia. It is a paradisematic country, in which
+          roasted parts of sentences fly into your mouth.
+        </p>
       </div>
+
+      <div class="projects-container">
+            <!-- Project Card -->
+        <div class="project-card">
+          <div class="inner">
+            <div class="thumbnail">
+              <a href="#">
+              <img src="/assets/images/altumcode-dC6Pb2JdAqs-unsplash.jpg" alt="Project1-img" /> 
+              </a>
+            </div>
+
+            <div class="content">
+              <h3>Project Title 1</h3>
+              <a href="#">
+              <p>
+                Short description about the project. Built with HTML, CSS,
+                JavaScript.
+              </p>
+            </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="inner">
+            <div class="thumbnail">
+              <a href="#">
+              <img src="/assets/images/altumcode-dC6Pb2JdAqs-unsplash.jpg" alt="Project1-img" /> 
+              </a>
+            </div>
+
+            <div class="content">
+              <h3>Project Title 1</h3>
+              <a href="#">
+              <p>
+                Short description about the project. Built with HTML, CSS,
+                JavaScript.
+              </p>
+            </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="inner">
+            <div class="thumbnail">
+              <a href="#">
+              <img src="/assets/images/altumcode-dC6Pb2JdAqs-unsplash.jpg" alt="Project1-img" /> 
+              </a>
+            </div>
+
+            <div class="content">
+              <h3>Project Title 1</h3>
+              <a href="#">
+              <p>
+                Short description about the project. Built with HTML, CSS,
+                JavaScript.
+              </p>
+            </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="inner">
+            <div class="thumbnail">
+              <a href="#">
+              <img src="/assets/images/altumcode-dC6Pb2JdAqs-unsplash.jpg" alt="Project1-img" /> 
+              </a>
+            </div>
+
+            <div class="content">
+              <h3>Project Title 1</h3>
+              <a href="#">
+              <p>
+                Short description about the project. Built with HTML, CSS,
+                JavaScript.
+              </p>
+            </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="inner">
+            <div class="thumbnail">
+              <a href="#">
+              <img src="/assets/images/altumcode-dC6Pb2JdAqs-unsplash.jpg" alt="Project1-img" /> 
+              </a>
+            </div>
+
+            <div class="content">
+              <h3>Project Title 1</h3>
+              <a href="#">
+              <p>
+                Short description about the project. Built with HTML, CSS,
+                JavaScript.
+              </p>
+            </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="inner">
+            <div class="thumbnail">
+              <a href="#">
+              <img src="/assets/images/altumcode-dC6Pb2JdAqs-unsplash.jpg" alt="Project1-img" /> 
+              </a>
+            </div>
+
+            <div class="content">
+              <h3>Project Title 1</h3>
+              <a href="#">
+              <p>
+                Short description about the project. Built with HTML, CSS,
+                JavaScript.
+              </p>
+            </a>
+            </div>
+          </div>
+        </div>
+        
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="contact-section">
-      <h2>Contact Me</h2>
+
+       <div class="contact-header">
+        <h1 class="big-header">Contact</h1>
+        <h2>Contact <span>Me</span></h2>
       <p>Feel free to reach out to discuss your next project or just say hi!</p>
-      <form class="contact-form">
-        <div class="form-group">
-          <label for="name">Name*</label>
-          <input type="text" id="name" required />
+      <div class="contact-main">
+        <div class="contact-image">
+          <img src="/assets/images/Image-mypic.png" alt="Profile Image">
         </div>
-        <div class="form-group">
-          <label for="email">Email*</label>
-          <input type="email" id="email" required />
+  
+        <div class="contact-form">
+          <form action="#" method="post">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+  
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+  
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Your message here..." rows="5" required></textarea>
+  
+            <button type="submit" class="send-btn">SEND MESSAGE</button>
+          </form>
         </div>
-        <div class="form-group">
-          <label for="message">Message*</label>
-          <textarea id="message" rows="5" required></textarea>
-        </div>
-        <button type="submit" class="btn-primary">Send Message</button>
-      </form>
+      </div>
     </section>
 
     <!-- Footer Section -->
