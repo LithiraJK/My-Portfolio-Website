@@ -672,28 +672,69 @@ body {
 }
 .contact-section {
   padding: 4rem 2rem;
-  background-color: #000000;
+  background-color: #333333;
 }
 
+.contact-section h2 {
+  margin-bottom: 1rem;
+}
 
 .contact-main {
+  display: flex;
+  margin: 1em 4em;
 
-  
 }
 
-.contact-info-icon > img{
-  width: 80%;
-  height: 80%;
+.contact-image {
+  background-color: #171717;
+}
+.contact-image > img {
+  height: 100%;
   object-fit: cover;
-  margin-bottom: 1em;
-  }
-
-.contact-info-icon {
-  background-color: #333;
-  width: 20px;
-  height: 20px;
- 
 }
+
+.contact-form {
+  background-color: #F8F9FA;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 48px;
+  box-sizing: border-box;
+  gap: 2em;
+}
+
+
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+    margin: 1em 0em;
+}
+
+input[type=email], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: vertical;
+  margin: 1em 0em;
+}
+
+.send-btn {
+  background-color: #fccd2a;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  float: left;
+  color: #000000;
+  margin: 1em 0em;
+}
+
 
 
 /* Footer Section */
