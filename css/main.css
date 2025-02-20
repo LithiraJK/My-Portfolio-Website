@@ -7,7 +7,7 @@
 
 body {
   font-family: "Poppins", serif;
-  background-color: #171717;
+  background-color: #000;
   color: #ffffff;
   line-height: 1.6;
   scroll-behavior: smooth;
@@ -21,13 +21,14 @@ body {
 
 /* Header & Navigation */
 .header {
-  background-color: #000000;
+  background-color: #000;
   padding: 1rem 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
   position: sticky;
   top: 0;
+  z-index: 2;
 }
 
 .navbar {
@@ -40,7 +41,7 @@ body {
 }
 
 .logo {
-  color: #fccd2a;
+  color: #fff;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -51,14 +52,9 @@ body {
   height: 8%;
   object-fit: cover;
   border-radius: 50%;
-  border: 3px solid #fccd2a;
+  border: 3px solid #999999;
 }
 
-.logo > span {
-  font-size: 1.5rem;
-  margin: 0px 10px;
-  font-weight: 600;
-}
 
 .nav-links {
   list-style: none;
@@ -84,7 +80,7 @@ body {
   align-items: center;
   justify-content: space-around;
   height: 90vh;
-  background: #171717;
+  background: #000;
   padding: 2rem;
   margin-top: 2rem;
 }
@@ -126,14 +122,14 @@ body {
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
-  background-color: #171717;
+  background-color: #000;
   margin: 10px 0px;
 }
 
 .social-link img {
-  background-color: #171717;
+  background-color: #000;
   border-radius: 50%;
-  border: 2px solid #171717;
+  border: 2px solid #000;
 }
 
 .social-link img:hover {
@@ -153,7 +149,7 @@ body {
 
 .btn-download-CV {
   background-color: #fccd2a;
-  color: #1b1b1b;
+  color: #000;
   padding: 0.75rem 1.5rem;
   border-radius: 15px;
   cursor: pointer;
@@ -166,7 +162,7 @@ body {
 
 .btn-see-more {
   background-color: #fccd2a;
-  color: #1b1b1b;
+  color: #000;
   padding: 0.75rem 1.5rem;
   border-radius: 15px;
   cursor: pointer;
@@ -189,6 +185,16 @@ body {
   background-color: #333333;
 }
 
+.about-header .big-header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 7vw;
+  color: rgba(255, 255, 255, 0.1);
+  font-weight: 900;
+  z-index: 0;
+}
+
 .about-container {
   display: flex;
   align-items: center;
@@ -207,11 +213,15 @@ body {
 .about-content {
   flex: 1 1 400px;
   min-width: 300px;
+  position: relative;
 }
 
 .about-content h2 {
   font-size: 3rem;
   margin-bottom: 1rem;
+  position: relative;
+
+
 }
 .about-content h2 span {
   color: #fccd2a;
@@ -219,13 +229,16 @@ body {
 .about-content h3 {
   font-size: 1.5rem;
   margin: 10px 0px;
+  position: relative;
+  bottom:1em;
 }
 
 .about-content p {
   font-size: 1rem;
   line-height: 1.5;
   color: #ccc;
-  margin-bottom: 1.5rem;
+  position: relative;
+  bottom: 1em;
 }
 
 .about-details {
@@ -250,7 +263,6 @@ body {
 
 .detail-value {
   color: #ccc;
-  position: relative;
 }
 
 #btn-seemore {
@@ -266,10 +278,9 @@ body {
 
 .resume-section {
   padding: 4rem 2rem;
-  background: #222;
+  background: #000;
   color: #fff;
   text-align: center;
-  position: relative;
 }
 .container {
   max-width: 1000px;
@@ -569,11 +580,9 @@ body {
 
 .project-card {
   background-color: #2a2a2a;
-  border-radius: 15px;
   padding: 1.5rem;
   border-radius: 20px;
   text-align: left;
-
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   position: relative;
   z-index: 1;
@@ -587,14 +596,6 @@ body {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
 }
 
-.project-card img {
-  width: 100%;
-  height: 60%;
-  border-radius: 10px;
-  object-fit: cover;
-  display: block;
-}
-
 .project-card .inner .thumbnail {
   overflow: hidden;       /* Hide image overflow when zoomed */
   border-radius: 10px;
@@ -603,8 +604,11 @@ body {
 
 .project-card .inner .thumbnail img {
   width: 100%;
+  height: 60%;
   display: block;
   transition: transform 0.5s ease;
+  border-radius: 10px;
+  object-fit: cover;
 }
 
 /* Image zooms in on hover (container stays fixed) */
@@ -653,7 +657,6 @@ body {
 .contact-header h2 {
   font-size: 3rem;
   margin: 0;
-  left: 6em;
   position: relative;
   z-index: 1;
 }
@@ -670,26 +673,64 @@ body {
 .contact-header > h2 > span {
   color: #fccd2a;
 }
+
 .contact-section {
   padding: 4rem 2rem;
+  text-align: center;
   background-color: #333333;
 }
 
 .contact-section h2 {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
+}
+
+.contact-info{
+  display: grid;
+  grid-template-columns: repeat(4 ,1fr);
+  padding: 1em;
+  align-items: start;
+}
+
+.info-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1em;
+  margin: 2em;
+}
+
+.info-icon {
+  width: 100px;
+  height: 100px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50px;
+  border: #000;
+  padding: 1em;
+  align-content: center;
+}
+.info-icon > img {
+  width: 60%;
+  height: auto;
+  object-fit: cover;
+  align-items: center;
 }
 
 .contact-main {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
   margin: 1em 4em;
 
 }
 
 .contact-image {
   background-color: #171717;
+  width: 50%;
 }
 .contact-image > img {
-  height: 100%;
+  width: 40em;
+  height: 40em;
   object-fit: cover;
 }
 
@@ -731,7 +772,7 @@ input[type=email], select, textarea {
   border-radius: 40px;
   cursor: pointer;
   float: left;
-  color: #000000;
+  color: #000;
   margin: 1em 0em;
 }
 
@@ -739,15 +780,82 @@ input[type=email], select, textarea {
 
 /* Footer Section */
 .footer {
-  background-color: #1b1b1b;
-  padding: 1rem;
+  background-color: #000;
+  padding: 2rem;
   text-align: center;
   color: #ffffff;
   border-top: 1px solid #333;
 }
 
-.footer p {
-  margin: 0;
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.f-nav-link >li >a {
+  color: #999999;
+  text-decoration: none;
+
+}
+
+.f-nav-link >li >img {
+  width: 1.3em;
+  height: 1em;
+  margin-right: 0.5em;
+
+}
+
+
+.f-nav-link {
+  text-decoration: none;
+  display:flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 0;
+
+  
+}
+
+.content-column {
+  text-align: left;
+  line-height: 2em;
+}
+
+.f-nav-link >li >p{
+  color: #999999;
+}
+.f-icon {
+  width: 1em !important;
+}
+
+
+  
+.social-link-btn {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  
+
+}
+.img-container{
+  width: 4em;
+  height: 4em;
+  background-color: #333;
+  border-radius: 50%;
+  align-content: center;
+  margin-left:10px ;
+
+}
+
+.img-container > img {
+  width: 60%;
+  height: 60%;
+  
+}
+
+.content-column > p {
+  padding-right: 4em;
+  color: #999999;
 }
 
 /* Responsive Media Queries */

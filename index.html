@@ -31,7 +31,6 @@
       <nav class="navbar">
         <div class="logo">
           <img src="/assets/images/Image-mypic.png" alt="profile-pic" />
-          <span>LITHIRA</span>
         </div>
         <ul class="nav-links">
           <li><a href="#home" class="active">Home</a></li>
@@ -90,13 +89,17 @@
           <img src="/assets/images/img with ring.png" alt="Profile Picture" />
         </div>
         <div class="about-content">
-          <h2>About <span>Me</span></h2>
-          <h3>Software Developer</h3>
-          <p>
-            I'm a software developer and web designer, skilled in Java, MySQL,
-            and web design. I focus on creating user-friendly, functional
-            solutions with a passion for new challenges.
-          </p>
+          <div class="about-header">
+            <h2>About <span>Me</span></h2>
+            <h1 class="big-header">About</h1>
+            <h3>Software Developer</h3>
+            <p>
+              I'm a software developer and web designer, skilled in Java, MySQL,
+              and web design. I focus on creating user-friendly, functional
+              solutions with a passion for new challenges.
+            </p>
+          </div>
+
           <div class="about-details">
             <div class="detail-row">
               <span class="detail-label">Name :</span>
@@ -272,6 +275,7 @@
 
     <!-- Projects Section -->
     <section class="projects-section" id="projects">
+
        <div class="projects-header">
         <h1 class="big-header">Projects</h1>
         <h2><span>Our</span> Projects</h2>
@@ -415,6 +419,37 @@
         <p>Feel free to reach out to discuss your next project or just say hi!</p>
       </div>
 
+      <div class="contact-info">
+        <div class="info-content">
+          <div class="info-icon">
+            <img src="/assets/icons/icons8-location-96 (1).png" alt="location">
+          </div>
+          <h4>ADDRESS</h4>
+          <p>Lelkada, Ginimellagaha. Sri Lanka.</p>
+        </div>
+        <div class="info-content">
+          <div class="info-icon">
+            <img src="/assets/icons/icons8-phone-96.png" alt="phone">
+          </div>
+          <h4>CONTACT</h4>
+          <p>+94 769270053</p>
+        </div>
+        <div class="info-content">
+          <div class="info-icon">
+            <img src="/assets/icons/icons8-email-send-96 (1).png" alt="email">
+          </div>
+          <h4>EMAIL</h4>
+          <p>kariyawasamlithira2@gmail.com</p>
+        </div>
+        <div class="info-content">
+          <div class="info-icon">
+            <img src="/assets/icons/icons8-github (1).svg" alt="github-logo">
+          </div>
+          <h4>GitHub</h4>
+          <p>Lithira JK/GitHub.com</p>
+        </div>
+      </div>
+
 
       <div class="contact-main">
 
@@ -426,7 +461,8 @@
           <form action="#" method="post">
             <input type="text" id="name" name="name" placeholder="Enter your name" required>
             <input type="email" id="email" name="email" placeholder="Enter your email" required>
-            <textarea id="message" name="message" placeholder="Your message here..." rows="5" required></textarea>
+            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+            <textarea id="message" name="message" placeholder="Your message here..." rows="15" required></textarea>
             <button type="submit" class="send-btn">SEND MESSAGE</button>
           </form>
         </div>
@@ -436,7 +472,70 @@
 
     <!-- Footer Section -->
     <footer class="footer">
-      <p>&copy; 2025 Lithira Jayanaka. All rights reserved.</p>
+      <div class="footer-container">
+        <div class="footer-content">
+
+          <div class="content-column">
+            <h4>About</h4>
+            <p>Far far away, behind the word
+              mountains, far from the
+              countries Vokalia and
+              Consonantia, there live the
+              blind texts.</p>
+          </div>
+
+          <div class="content-column">
+            <h4>Links</h4>
+              <nav>
+                <ul class="f-nav-link">
+                  <li><img src="/assets/icons/icons8-arrow-96 (1).png" alt="arrow"><a href="#home">Home</a></li>
+                  <li><img src="/assets/icons/icons8-arrow-96 (1).png" alt="arrow"><a href="#about">About</a></li>
+                  <li><img src="/assets/icons/icons8-arrow-96 (1).png" alt="arrow"><a href="#resume">Resume</a></li>
+                  <li><img src="/assets/icons/icons8-arrow-96 (1).png" alt="arrow"><a href="#skills">Skills</a></li>
+                  <li><img src="/assets/icons/icons8-arrow-96 (1).png" alt="arrow"><a href="#projects">Projects</a></li>
+                  <li><img src="/assets/icons/icons8-arrow-96 (1).png" alt="arrow"><a href="#contact">Contact</a></li>
+                </ul>
+              </nav>
+          </div>
+
+          <div class="content-column">
+            <h4>Skills</h4>
+              <nav>
+                <ul class="f-nav-link">
+                  <li><img src="/assets/icons/icons8-arrow-96 (1).png" alt="arrow"><a href="#skills">Web Design</a></li>
+                  <li><img src="/assets/icons/icons8-arrow-96 (1).png" alt="arrow"><a href="#skills">Web Development</a></li>
+                  <li><img src="/assets/icons/icons8-arrow-96 (1).png" alt="arrow"><a href="#skills">Java Development</a></li>
+                  <li><img src="/assets/icons/icons8-arrow-96 (1).png" alt="arrow"><a href="#skills">Data Managment</a></li>
+                  <li><img src="/assets/icons/icons8-arrow-96 (1).png" alt="arrow"><a href="#skills">UI/UX Design</a></li>
+                </ul>
+              </nav>
+          </div>
+
+          <div class="content-column">
+            <h4>Have a Questions?</h4>
+            <ul class="f-nav-link">
+              <li><img src="/assets/icons/icons8-location-96.png" alt="location" class="f-icon"><p>Lelkada, Ginimellagaha. Sri Lanka.</p></li>
+              <li><img src="/assets/icons/icons8-phone-96 (1).png" alt="phone" class="f-icon"><p>+94 769270053</p></li>
+              <li><img src="/assets/icons/icons8-mail-96.png" alt="email" class="f-icon"><p>kariyawasamlithira2@gmail.com</p></li>
+            </ul> 
+          </div>
+
+        </div>
+
+        <div class="social-link-btn">
+          <div class="img-container">
+            <img src="/assets/icons/icons8-fb-90.png" alt="fb-logo">
+          </div>
+          <div class="img-container">
+            <img src="/assets/icons/icons8-github-logo-90.png" alt="github-logo">
+          </div>
+          <div class="img-container">
+            <img src="/assets/icons/icons8-linkedin-96.png" alt="linkedin-logo">
+          </div>
+        </div>
+
+        <p>&copy; 2025 Lithira Jayanaka. All rights reserved.icon by Icons8.</p>
+      </div>
     </footer>
   </body>
 </html>
