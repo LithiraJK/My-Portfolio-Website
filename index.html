@@ -22,7 +22,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/style.css" />
   </head>
 
   <body>
@@ -31,6 +31,7 @@
       <nav class="navbar">
         <div class="logo">
           <img src="/assets/images/Image-mypic.png" alt="profile-pic" />
+          <span>Lithira.</span>
         </div>
         <ul class="nav-links">
           <li><a href="#home" class="active">Home</a></li>
@@ -48,7 +49,15 @@
       <div class="hero-content">
         <h3>Hello It’s Me</h3>
         <h2>Lithira Jayanaka</h2>
-        <h3>And I’m a <span>Frontend Developer</span></h3>
+        <div class="text-wrapper">
+            <span>And I’m a </span>
+            <ul class="dynamic-texts">
+                <li><span>Frontend Developer .</span></li>
+                <li><span>Backend Developer .</span></li>
+                <li><span>UI / UX Designer .</span></li>
+            </ul>
+        </div>
+        
         <p>
           Hi, I'm Lithira Jayanaka, a passionate Software <br />
           Developer focused on building innovative and <br />
@@ -211,7 +220,7 @@
                   <p>Completed Diploma in Information Technology at ABC Institute</p>
                 </div>
               </div>
-              <!-- Add more education items -->
+
             </div>
           </div>
   
@@ -235,41 +244,53 @@
 
       <div class="skills-container">
         <div class="skill-card" id="card1">
-          <img src="/assets/icons/microchip-solid.svg" alt="logo">
-          <h3>Mobile App</h3>
-          <p>I throw myself down among the tall grass by the stream as I lie close to the earth.</p>
+          <div class="card-content">
+            <img src="/assets/icons/microchip-solid.svg" alt="logo">
+            <h3>Mobile App</h3>
+            <p>I throw myself down among the tall grass by the stream as I lie close to the earth.</p>
+          </div>
         </div>
 
         <div class="skill-card" id="card2">
-          <img src="/assets/icons/microchip-solid.svg" alt="logo">
-          <h3>HTML & CSS</h3>
-          <p>Expert in semantic HTML and modern CSS layouts (Flexbox, Grid).</p>
+          <div class="card-content">
+            <img src="/assets/icons/microchip-solid.svg" alt="logo">
+            <h3>HTML & CSS</h3>
+            <p>Expert in semantic HTML and modern CSS layouts (Flexbox, Grid).</p>
+          </div>
         </div>
 
         <div class="skill-card" id="card3">
-          <img src="/assets/icons/microchip-solid.svg" alt="logo">
-          <h3>HTML & CSS</h3>
-          <p>Expert in semantic HTML and modern CSS layouts (Flexbox, Grid).</p>
+          <div class="card-content">
+            <img src="/assets/icons/microchip-solid.svg" alt="logo">
+            <h3>HTML & CSS</h3>
+            <p>Expert in semantic HTML and modern CSS layouts (Flexbox, Grid).</p>
+          </div>
         </div>
 
         <div class="skill-card" id="card4">
-          <img src="/assets/icons/microchip-solid.svg" alt="logo">
-          <h3>HTML & CSS</h3>
-          <p>Expert in semantic HTML and modern CSS layouts (Flexbox, Grid).</p>
+          <div class="card-content">
+            <img src="/assets/icons/microchip-solid.svg" alt="logo">
+            <h3>HTML & CSS</h3>
+            <p>Expert in semantic HTML and modern CSS layouts (Flexbox, Grid).</p>
+          </div>
         </div>
 
         <div class="skill-card" id="card5">
-          <img src="/assets/icons/microchip-solid.svg" alt="logo">
-          <h3>HTML & CSS</h3>
-          <p>Expert in semantic HTML and modern CSS layouts (Flexbox, Grid).</p>
+          <div class="card-content">
+            <img src="/assets/icons/microchip-solid.svg" alt="logo">
+            <h3>HTML & CSS</h3>
+            <p>Expert in semantic HTML and modern CSS layouts (Flexbox, Grid).</p>
+          </div>
         </div>
 
         <div class="skill-card" id="card6">
-          <img src="/assets/icons/microchip-solid.svg" alt="logo">
-          <h3>HTML & CSS</h3>
-          <p>Expert in semantic HTML and modern CSS layouts (Flexbox, Grid).</p>
+          <div class="card-content">
+            <img src="/assets/icons/microchip-solid.svg" alt="logo">
+            <h3>HTML & CSS</h3>
+            <p>Expert in semantic HTML and modern CSS layouts (Flexbox, Grid).</p>
+          </div>
         </div>
-       
+
       </div>
     </section>
 
@@ -291,14 +312,14 @@
         <div class="project-card">
           <div class="inner">
             <div class="thumbnail">
-              <a href="#">
+              <a href="#project-01-modal">
               <img src="/assets/images/altumcode-dC6Pb2JdAqs-unsplash.jpg" alt="Project1-img" /> 
               </a>
             </div>
 
             <div class="content">
               <h3>Project Title 1</h3>
-              <a href="#">
+              <a href="#project-01-modal">
               <p>
                 Short description about the project. Built with HTML, CSS,
                 JavaScript.
@@ -311,14 +332,14 @@
         <div class="project-card">
           <div class="inner">
             <div class="thumbnail">
-              <a href="#">
+              <a href="#project-02-modal">
               <img src="/assets/images/altumcode-dC6Pb2JdAqs-unsplash.jpg" alt="Project1-img" /> 
               </a>
             </div>
 
             <div class="content">
-              <h3>Project Title 1</h3>
-              <a href="#">
+              <h3>Project Title 2</h3>
+              <a href="#project-02-modal">
               <p>
                 Short description about the project. Built with HTML, CSS,
                 JavaScript.
@@ -331,14 +352,14 @@
         <div class="project-card">
           <div class="inner">
             <div class="thumbnail">
-              <a href="#">
+              <a href="#project-03-modal">
               <img src="/assets/images/altumcode-dC6Pb2JdAqs-unsplash.jpg" alt="Project1-img" /> 
               </a>
             </div>
 
             <div class="content">
-              <h3>Project Title 1</h3>
-              <a href="#">
+              <h3>Project Title 3</h3>
+              <a href="#project-03-modal">
               <p>
                 Short description about the project. Built with HTML, CSS,
                 JavaScript.
@@ -351,14 +372,14 @@
         <div class="project-card">
           <div class="inner">
             <div class="thumbnail">
-              <a href="#">
+              <a href="#project-04-modal">
               <img src="/assets/images/altumcode-dC6Pb2JdAqs-unsplash.jpg" alt="Project1-img" /> 
               </a>
             </div>
 
             <div class="content">
-              <h3>Project Title 1</h3>
-              <a href="#">
+              <h3>Project Title 4</h3>
+              <a href="#project-04-modal">
               <p>
                 Short description about the project. Built with HTML, CSS,
                 JavaScript.
@@ -371,14 +392,14 @@
         <div class="project-card">
           <div class="inner">
             <div class="thumbnail">
-              <a href="#">
+              <a href="#project-05-modal">
               <img src="/assets/images/altumcode-dC6Pb2JdAqs-unsplash.jpg" alt="Project1-img" /> 
               </a>
             </div>
 
             <div class="content">
-              <h3>Project Title 1</h3>
-              <a href="#">
+              <h3>Project Title 5</h3>
+              <a href="#project-05-modal">
               <p>
                 Short description about the project. Built with HTML, CSS,
                 JavaScript.
@@ -391,14 +412,14 @@
         <div class="project-card">
           <div class="inner">
             <div class="thumbnail">
-              <a href="#">
+              <a href="#project-06-modal">
               <img src="/assets/images/altumcode-dC6Pb2JdAqs-unsplash.jpg" alt="Project1-img" /> 
               </a>
             </div>
 
             <div class="content">
-              <h3>Project Title 1</h3>
-              <a href="#">
+              <h3>Project Title 6</h3>
+              <a href="#project-06-modal">
               <p>
                 Short description about the project. Built with HTML, CSS,
                 JavaScript.
@@ -407,7 +428,26 @@
             </div>
           </div>
         </div>
-        
+      </div>
+<!-- project modal -->
+
+      <div class="project-modal" id="project-01-modal">
+        <div class="modal-container">
+          <span class="close">&times;</span>
+          <div class="modal-content">
+            <div class="modal-left">
+              <img src="/assets/images/computer-8779036_1920.jpg" alt="Project Image">
+            </div>
+            <div class="modal-right">
+              <h2>App Design Development</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+              <button class="view-project">View Project →</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     </section>
 
     <!-- Contact Section -->
@@ -522,20 +562,36 @@
 
         </div>
 
-        <div class="social-link-btn">
-          <div class="img-container">
-            <img src="/assets/icons/icons8-fb-90.png" alt="fb-logo">
-          </div>
-          <div class="img-container">
-            <img src="/assets/icons/icons8-github-logo-90.png" alt="github-logo">
-          </div>
-          <div class="img-container">
-            <img src="/assets/icons/icons8-linkedin-96.png" alt="linkedin-logo">
-          </div>
-        </div>
+        <nav class="social-link-btn">
+          <ul>
+            <li>
+              <a href="#">
+                <div class="img-container">
+                  <img src="/assets/icons/icons8-fb-90.png" alt="fb-logo">
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img-container">
+                  <img src="/assets/icons/github-logo.png" alt="github-logo">
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img-container">
+                  <img src="/assets/icons/icons8-linkedin-96.png" alt="linkedin-logo">
+                </div>
+              </a>
+            </li>
+          </ul>
+          
+        </nav>
 
         <p>&copy; 2025 Lithira Jayanaka. All rights reserved.icon by Icons8.</p>
       </div>
     </footer>
+    <script src="/js/ProjectModal.js"></script>
   </body>
 </html>
