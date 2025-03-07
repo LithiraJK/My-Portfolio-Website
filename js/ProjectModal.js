@@ -1,25 +1,28 @@
-
-console.log("console is loading");
 document.addEventListener("DOMContentLoaded", () => {
-    const modals = document.querySelectorAll(".project-modal");
     const openButtons = document.querySelectorAll(".project-card a"); 
     const closeButtons = document.querySelectorAll(".close");
 
-    openButtons.forEach((button, index) => {
+    openButtons.forEach((button) => {
         button.addEventListener("click", (event) => {
-            event.preventDefault(); // Prevent scrolling behavior
-            modals[index].style.display = "flex";
+            event.preventDefault(); // Prevent scrolling
+            const modalId = button.getAttribute("href").substring(1); // Get id without '#'
+            const modal = document.getElementById(modalId);
+            if (modal) {
+                modal.style.display = "flex";
+            }
         });
     });
 
-    closeButtons.forEach((button, index) => {
+    closeButtons.forEach((button) => {
         button.addEventListener("click", () => {
-            modals[index].style.display = "none";
+            const modal = button.closest(".project-modal");
+            if (modal) {
+                modal.style.display = "none";
+            }
         });
     });
 
-    // Close modal when clicking outside modal content
-    modals.forEach((modal) => {
+    document.querySelectorAll(".project-modal").forEach((modal) => {
         modal.addEventListener("click", (event) => {
             if (event.target === modal) {
                 modal.style.display = "none";
@@ -27,4 +30,3 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
-
