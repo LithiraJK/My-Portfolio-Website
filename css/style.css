@@ -1086,6 +1086,7 @@ textarea {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  margin-bottom: 20px;
 }
 footer .img-container {
   width: 3em;
@@ -1107,6 +1108,10 @@ footer .img-container:hover {
 .img-container > img {
   width: 50%;
   height: 50%;
+}
+
+.content-column{
+  padding: 1em;
 }
 
 .content-column > p {

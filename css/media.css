@@ -8,12 +8,8 @@
   
   @media screen and (min-width: 425px) and (max-width: 767px) {
     /* CSS rules for Mobile Large Devices */
-  }
-  
-  @media screen and (min-width: 768px) and (max-width: 1023px) {
-    /* CSS rules for Tablet Devices */
 
-    .hero-content h3 {
+     /* .hero-content h3 {
         font-size: 1.5em;
         margin-bottom: 0.5em;
     }
@@ -21,7 +17,6 @@
     .hero-content span{
         font-size: 1.5em;
     }
-
 
     .hero-content h2{
         font-size: 2.5em;
@@ -39,7 +34,73 @@
     }
     .dynamic-texts li {
         font-size: 1.5rem;
+    } */
+  }
+  
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    /* CSS rules for Tablet Devices */
+
+    .navbar{
+        max-width: 1000px;
+        background-color: yellowgreen;
     }
+
+    .hero-section .container {
+        flex-direction: column-reverse;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    .hero-image{
+        width: 100%;
+    }
+
+    /* about-section */
+    
+    .about-section .container {
+        flex-direction: column;
+    }
+
+    .about-image {
+        width: 100%;
+    }
+
+    .about-content {
+        flex-direction: column;
+        padding: 0 4em;
+      
+      }
+
+    /* skill-section */
+
+    .skills-container {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    /* project-section */
+
+    .projects-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* contact-section */
+
+
+      .contact-info {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      /* footer */
+
+      .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+   
 
   }
   
@@ -54,6 +115,7 @@
 
     .navbar{
         max-width: 1100px;
+        background-color: blueviolet;
     }
     .about-details {
         padding-right: 5rem;
