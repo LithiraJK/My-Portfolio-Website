@@ -276,7 +276,7 @@ body {
 
 .about-header .big-header {
   position: absolute;
-  left: 0;
+  left: 5%;
   top: 5%;
   font-size: 7rem;
   color: rgba(255, 255, 255, 0.1);
@@ -492,7 +492,7 @@ body {
   align-items: center;
   position: relative;
   margin: 2rem 0;
-  padding: 1rem 0;
+  padding: 1rem 1rem;
   gap: 50px;
 }
 .resume-item::before {
