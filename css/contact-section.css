@@ -1,0 +1,135 @@
+.contact-header {
+    position: relative;
+    margin-bottom: 2rem;
+  }
+  .contact-header .big-header {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    font-size: 7rem;
+    color: rgba(255, 255, 255, 0.1);
+    font-weight: 900;
+    padding: 1rem;
+    z-index: 0;
+  }
+  .contact-header h2 {
+    font-size: 3rem;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+  }
+  .contact-header p {
+    font-size: 1rem;
+    color: #ccc;
+    text-align: center;
+    margin: 1rem 0;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .contact-header > h2 > span {
+    color: #fccd2a;
+  }
+  
+  .contact-section {
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: #303030;
+  }
+  
+  .contact-section h2 {
+    margin-bottom: 1rem;
+  }
+  
+  .contact-info {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 1em;
+    align-items: start;
+  }
+  
+  .info-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1em;
+    margin: 2em;
+  }
+  
+  .info-icon {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50px;
+    border: #000;
+    padding: 1em;
+    align-content: center;
+  }
+  .info-icon > img {
+    width: 60%;
+    height: auto;
+    object-fit: cover;
+    align-items: center;
+  }
+  
+  .contact-main {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    background-color: #0d0d0d;
+  }
+  
+  .contact-image {
+    width: 50%;
+    height: 100%;
+  }
+  .contact-image > img {
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .contact-form {
+    background-color: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4em;
+    box-sizing: border-box;
+    gap: 2em;
+    width: 50%;
+  }
+  
+  input[type="text"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+    margin-bottom: 1em;
+  }
+  
+  input[type="email"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+    margin-bottom: 1em;
+  }
+  
+  .send-btn {
+    background-color: #fccd2a;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    float: left;
+    color: #000;
+  }

@@ -4,8 +4,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     openButtons.forEach((button) => {
         button.addEventListener("click", (event) => {
-            event.preventDefault(); // Prevent scrolling
-            const modalId = button.getAttribute("href").substring(1); // Get id without '#'
+            event.preventDefault(); 
+            const modalId = button.getAttribute("href").substring(1);
             const modal = document.getElementById(modalId);
             if (modal) {
                 modal.style.display = "flex";

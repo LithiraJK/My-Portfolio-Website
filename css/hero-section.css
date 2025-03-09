@@ -1,0 +1,159 @@
+.hero-section .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .hero-section {
+    margin-top: 100px;
+  }
+  
+  .hero-content{
+    padding: 0 1rem;
+  }
+  
+  .hero-content h2 {
+    font-size: 3rem;
+    text-align: left;
+  }
+  
+  .hero-content h3 {
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin-bottom: 1rem;
+    text-align: left;
+  }
+  
+  .text-wrapper span {
+    font-size: 1.5rem;
+    color: #ffffff;
+    text-align: left;
+    font-weight: 700;
+  }
+  
+  .text-wrapper {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .dynamic-texts li span {
+    position: relative;
+    color: #fccd2a;
+  }
+  
+  .dynamic-texts li {
+    list-style: none;
+    font-size: 1.5rem;
+    color: #fccd2a;
+    text-align: left;
+    font-weight: 700;
+    position: relative;
+    margin-left: 10px;
+    top: 0;
+    animation: slide 6s steps(3) infinite;
+  }
+  
+  @keyframes slide {
+    from {
+      left: 0;
+    }
+    to {
+      top: -150px;
+    }
+  }
+  
+  .text-wrapper .dynamic-texts {
+    height: 50px;
+    line-height: 50px;
+    overflow: hidden;
+  }
+  
+  .dynamic-texts li span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 40px;
+    width: 100%;
+    background-color: #0d0d0d;
+    border-left: 1px solid #fccd2a;
+    animation: typing 2s steps(16) infinite;
+  }
+  
+  @keyframes typing {
+    from {
+      left: 0;
+    }
+    to {
+      left: 100%;
+      margin: 0 -35px 0 35px;
+    }
+  }
+  
+  .hero-content p {
+    margin: 1em 0;
+    text-align: left;
+    color: #ccc;
+  }
+  
+  .hero-image{
+    width: 50%;
+    margin: 0 1em;
+  }
+  
+  .hero-image > img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .social-link {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2rem;
+    background-color: #0d0d0d;
+    margin: 10px 0px;
+  }
+  
+  .social-link img {
+    background-color: #0d0d0d;
+    border-radius: 50%;
+    border: 2px solid #0d0d0d;
+  }
+  
+  .social-link img:hover {
+    border-color: #fccd2a;
+    border-width: 2px;
+  }
+  .social-link a {
+    text-decoration: none;
+  }
+  .btn-container {
+    margin: 1rem 0rem;
+  }
+  
+  .btn-container a {
+    text-decoration: none;
+  }
+  
+  .btn-download-CV {
+    background-color: #fccd2a;
+    color: #0d0d0d;
+    padding: 0.75rem 1.5rem;
+    border-radius: 15px;
+    cursor: pointer;
+    font-weight: 600;
+    margin: 10px 10px 10px 0px;
+    border: #fccd2a;
+    box-shadow: 0 0 10px 0 #fccd2a;
+  
+    transition: transform 0.3s ease;
+  }
+  
+  
+  
+  .btn-download-CV:hover {
+    transform: scale(1.05);
+    box-shadow: none;
+  }
