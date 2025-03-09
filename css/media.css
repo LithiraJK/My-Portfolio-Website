@@ -35,7 +35,7 @@
     }
 
     .hero-content{
-        padding: 0 1rem;
+        padding: 0 1em;
     }
     .hero-content p {
         font-size: 1em;
@@ -90,13 +90,13 @@
       }
 
     .about-details{
-        padding-right: 1rem;
+        padding-right: 1em;
     }
 
     .detail-label {
         font-weight: 600;
         color: #fff;
-        margin-right: 1rem;
+        margin-right: 1em;
         font-size: 0.8rem;
       }
       
@@ -124,7 +124,7 @@
     }
 
     .tabs .tab-label {
-        padding: 0.6rem 0.6rem;
+        padding: 0.6em 0.6em;
         font-size: 0.8rem;
     }
 
@@ -184,8 +184,7 @@
 
     .contact-form {
         width: 100%;
-        padding: 2em;
-        gap: 1em;
+        padding: 1em;
     }
 
     .contact-info {
@@ -238,19 +237,19 @@
 
     .hero-content h3 {
         font-size: 1.3em;
-        margin-bottom: 0.5em;
+        margin-bottom: 0.5rem;
     }
 
     .hero-content span{
-        font-size: 1.3em;
+        font-size: 1.3rem;
     }
 
     .hero-content h2{
-        font-size: 2.3em;
+        font-size: 2.3rem;
     }
 
     .hero-content{
-        padding: 0 1rem;
+        padding: 0 1em;
     }
     .hero-content p {
         font-size: 1em;
@@ -297,13 +296,13 @@
     }
 
     .about-details{
-        padding-right: 1rem;
+        padding-right: 1em;
     }
 
     .detail-label {
         font-weight: 600;
         color: #fff;
-        margin-right: 1rem;
+        margin-right: 1em;
         font-size: 0.8rem;
       }
       
@@ -496,14 +495,13 @@
     }
 
     .about-details{
-        padding-right: 1rem;
+        padding-right: 1em;
     }
 
     /* Resume-section */
 
-
     .item-detail h4 {
-        margin: 0 0 0.2rem;
+        margin: 0 0 0.2em;
     }
 
     .item-detail p {
@@ -519,7 +517,7 @@
     }
 
     .tabs .tab-label {
-        padding: 0.6rem 1rem;
+        padding: 0.6rem 1em;
     }
 
 
@@ -688,6 +686,7 @@
   @media screen and (min-width: 1024px) and (max-width: 1439px) {
     /* CSS rules for Laptop Devices */
 
+
     .container {
         width: 100%;
         max-width: 1100px;
@@ -695,16 +694,17 @@
     }
 
     .about-details {
-        padding-right: 5rem;
+        padding-right: 5em;
     }
 
     .skill-card {
-        padding: 2rem;
+        padding: 2em;
     }
 
   }
   
-  @media screen and (min-width: 1440px) {
+  @media screen and (max-width: 1440px) {
     /* CSS rules for Laptop Large Devices */
+
   }
   

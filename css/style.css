@@ -60,7 +60,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  gap: 2rem;
+  gap: 2em;
 }
 
 .nav-links li a {
@@ -137,7 +137,7 @@ body {
 }
 
 .hero-content{
-  padding: 0 1rem;
+  padding: 0 1em;
 }
 
 .hero-content h2 {
@@ -148,7 +148,7 @@ body {
 .hero-content h3 {
   font-size: 1.5rem;
   color: #ffffff;
-  margin-bottom: 1rem;
+  margin-bottom: 1em;
   text-align: left;
 }
 
@@ -258,7 +258,7 @@ body {
   text-decoration: none;
 }
 .btn-container {
-  margin: 1rem 0rem;
+  margin: 1em 0em;
 }
 
 .btn-container a {
@@ -268,7 +268,7 @@ body {
 .btn-download-CV {
   background-color: #fccd2a;
   color: #0d0d0d;
-  padding: 0.75rem 1.5rem;
+  padding: 0.75em 1.5em;
   border-radius: 15px;
   cursor: pointer;
   font-weight: 600;
@@ -329,7 +329,7 @@ body {
 
 .about-content h2 {
   font-size: 3rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1em;
   position: relative;
 }
 .about-content h2 span {
@@ -361,13 +361,13 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.1rem;
+  padding: 0.1em;
 }
 
 .detail-label {
   font-weight: 600;
   color: #fff;
-  margin-right: 1rem;
+  margin-right: 1em;
 }
 
 .detail-value {
@@ -377,7 +377,7 @@ body {
 .btn-see-more {
   background-color: #fccd2a;
   color: #0d0d0d;
-  padding: 0.75rem 1.5rem;
+  padding: 0.75em 1.5em;
   border-radius: 15px;
   cursor: pointer;
   font-weight: 600;
@@ -412,7 +412,7 @@ body {
 
 .resume-header {
   position: relative;
-  margin-bottom: 3rem;
+  margin-bottom: 3em;
 }
 .resume-header .big-header {
   position: absolute;
@@ -422,7 +422,7 @@ body {
   font-size: 7rem;
   color: rgba(255, 255, 255, 0.1);
   font-weight: 900;
-  padding: 1rem;
+  padding: 1em;
   z-index: 0;
 }
 .resume-header h2 {
@@ -435,7 +435,7 @@ body {
   font-size: 1rem;
   color: #ccc;
   text-align: center;
-  margin: 1rem 0;
+  margin: 1em 0;
   position: relative;
   z-index: 1;
   padding: 0 2em;
@@ -457,7 +457,7 @@ body {
   display: inline-block;
   background-color: #fff;
   color: #333;
-  padding: 0.8rem 1.2rem;
+  padding: 0.8em 1.2em;
   margin: 0 0.5rem;
   border-radius: 8px;
   cursor: pointer;
@@ -475,7 +475,7 @@ body {
 }
 
 .tab-content {
-  margin-top: 2rem;
+  margin-top: 2em;
   position: relative;
   text-align: left;
   
@@ -510,8 +510,8 @@ body {
   justify-content: space-between;
   align-items: center;
   position: relative;
-  margin: 2rem 0;
-  padding: 1rem 1rem;
+  margin: 2em 0;
+  padding: 1em 1em;
   gap: 50px;
 }
 .resume-item::before {
@@ -539,18 +539,18 @@ body {
   font-weight: 600;
   font-size: 1rem;
   background-color: rgba(255, 255, 255, 0.1);
-  padding: 0.8rem;
+  padding: 0.8em;
   border-radius: 8px;
 }
 .item-detail {
   width: 45%;
   text-align: left;
   background-color: rgba(255, 255, 255, 0.1);
-  padding: 0.8rem;
+  padding: 0.8em;
   border-radius: 8px;
 }
 .item-detail h4 {
-  margin: 0 0 0.5rem;
+  margin: 0 0 0.5em;
   font-size: 1.2rem;
   color: #fff;
 }
@@ -574,7 +574,7 @@ body {
   font-size: 7rem;
   color: rgba(255, 255, 255, 0.1);
   font-weight: 900;
-  padding: 1rem;
+  padding: 1em;
   z-index: 0;
 }
 .skills-header h2 {
@@ -587,7 +587,7 @@ body {
   font-size: 1rem;
   color: #ccc;
   text-align: center;
-  margin: 1rem 0;
+  margin: 1em 0;
   position: relative;
   z-index: 1;
   padding: 0 2em;
@@ -599,13 +599,13 @@ body {
 }
 
 .skills-section {
-  padding: 4rem 0;
+  padding: 4em 0;
   text-align: center;
   background-color: #303030;
 }
 
 .skills-section h2 {
-  margin-bottom: 1rem;
+  margin-bottom: 1em;
 }
 
 .skills-container {
@@ -613,14 +613,14 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   /* grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); */
-  gap: 2rem;
+  gap: 2em;
   padding: 2em;
 }
 
 .skill-card {
   background: linear-gradient(145deg, #1e1e1e, #3c3c3c);
   border-radius: 15px;
-  padding: 3rem;
+  padding: 3em;
   text-align: left;
   transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
@@ -655,8 +655,8 @@ body {
 }
 
 .card-content > img {
-  width: 2rem;
-  height: 2rem;
+  width: 2em;
+  height: 2em;
   object-fit: cover;
   margin-bottom: 1em;
 }
@@ -669,7 +669,7 @@ body {
 
 .projects-header {
   position: relative;
-  margin-bottom: 2rem;
+  margin-bottom: 2em;
 }
 .projects-header .big-header {
   position: absolute;
@@ -679,7 +679,7 @@ body {
   font-size: 7rem;
   color: rgba(255, 255, 255, 0.1);
   font-weight: 900;
-  padding: 1rem;
+  padding: 1em;
   z-index: 0;
 }
 .projects-header h2 {
@@ -692,7 +692,7 @@ body {
   font-size: 1rem;
   color: #ccc;
   text-align: center;
-  margin: 1rem 0;
+  margin: 1em 0;
   position: relative;
   z-index: 1;
   padding: 0 2em;
@@ -704,12 +704,12 @@ body {
 
 .projects-section {
   background-color: #0d0d0d;
-  padding: 4rem 0 ;
+  padding: 4em 0 ;
   text-align: center;
 }
 
 .projects-section h2 {
-  margin-bottom: 1rem;
+  margin-bottom: 1em;
 }
 
 .projects-container {
@@ -721,7 +721,7 @@ body {
 
 .project-card {
   background: linear-gradient(145deg, #080808, #242424);
-  padding: 1.5rem;
+  padding: 1.5em;
   border-radius: 20px;
   text-align: left;
   position: relative;
@@ -876,33 +876,12 @@ body {
   cursor: pointer;
 }
 
-/* @media (max-width: 768px) {
-  .modal-container {
-    width: 90%;
-    padding: 10px;
-  }
-
-  .modal-content {
-    flex-direction: column;
-  }
-
-  .modal-left,
-  .modal-right {
-    width: 100%;
-  }
-
-  .close {
-    top: 5px;
-    right: 10px;
-    font-size: 20px;
-  }
-} */
 
 /* =============================== Contact Section ==================================== */
 
 .contact-header {
   position: relative;
-  margin-bottom: 2rem;
+  margin-bottom: 2em;
 }
 .contact-header .big-header {
   position: absolute;
@@ -912,7 +891,7 @@ body {
   font-size: 7rem;
   color: rgba(255, 255, 255, 0.1);
   font-weight: 900;
-  padding: 1rem;
+  padding: 1em;
   z-index: 0;
 }
 .contact-header h2 {
@@ -925,7 +904,7 @@ body {
   font-size: 1rem;
   color: #ccc;
   text-align: center;
-  margin: 1rem 0;
+  margin: 1em 0;
   position: relative;
   z-index: 1;
 }
@@ -935,13 +914,13 @@ body {
 }
 
 .contact-section {
-  padding: 4rem 2rem;
+  padding: 4em 2em;
   text-align: center;
   background-color: #303030;
 }
 
 .contact-section h2 {
-  margin-bottom: 1rem;
+  margin-bottom: 1em;
 }
 
 .contact-info {
@@ -1011,7 +990,6 @@ textarea {
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  resize: vertical;
   margin-bottom: 1em;
 }
 
@@ -1022,7 +1000,6 @@ textarea {
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  resize: vertical;
   margin-bottom: 1em;
 }
 
@@ -1039,7 +1016,7 @@ textarea {
 /* Footer Section */
 .footer {
   background-color: #0d0d0d;
-  padding: 2rem;
+  padding: 2em;
   text-align: center;
   color: #ffffff;
   border-top: 1px solid #333;
@@ -1119,30 +1096,4 @@ footer .img-container:hover {
   color: #999999;
 }
 
-/* Responsive Media Queries */
-/* @media (max-width: 768px) {
-  .hero-content h1 {
-    font-size: 2.2rem;
-  }
-
-  .hero-section {
-    height: auto;
-    padding: 4rem 2rem;
-  }
-
-  .about-container {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .navbar {
-    flex-direction: column;
-    gap: 1rem; 
-  }
-
-  .nav-links {
-    flex-direction: column;
-    gap: 1rem;
-  }
-} */
 
