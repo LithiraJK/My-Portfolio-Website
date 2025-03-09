@@ -21,7 +21,7 @@ body {
 
 .header {
   width: 100%;
-  background-color: #070707;
+  background-color: rgba(0, 0, 0, 0.7);
   padding: 1rem;
   display: flex;
   align-items: center;
@@ -238,8 +238,8 @@ body {
 .social-link {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
+  justify-content: flex-start;
+  gap: 2rem;
   background-color: #0d0d0d;
   margin: 10px 0px;
 }
@@ -715,7 +715,6 @@ body {
 .projects-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  /* grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); */
   gap: 2rem;
   padding: 2rem;
 }
@@ -801,16 +800,16 @@ body {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
   align-items: center;
   justify-content: center;
   z-index: 10;
 }
 
-/* Modal Container: The modal window */
 .modal-container {
   display: flex;
-  background: #222;
+  background: #0d0d0d;
   padding: 20px;
   border-radius: 10px;
   width: 60%;
@@ -818,7 +817,6 @@ body {
   position: relative;
 }
 
-/* Modal Content: Layout for left (image) and right (text) sections */
 .modal-content {
   display: flex;
   align-items: center;
@@ -826,7 +824,6 @@ body {
   width: 100%;
 }
 
-/* Left side: Image container */
 .modal-left {
   width: 50%;
 }
@@ -837,7 +834,6 @@ body {
   object-fit: cover;
 }
 
-/* Right side: Content area */
 .modal-right {
   width: 50%;
   padding: 20px;
@@ -862,11 +858,11 @@ body {
   cursor: pointer;
   border-radius: 5px;
   margin-right: 10px;
-  transition: background 0.3s ease;
+  transition: transform 0.3s ease;
 }
 
 .view-project:hover {
-  background: #fccd2a;
+  transform: scale(1.1);
 }
 
 .close {
