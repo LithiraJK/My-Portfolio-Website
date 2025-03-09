@@ -29,13 +29,25 @@
   <body>
     <!-- Header Section -->
     <header class="header">
+      <div class="logo">
+        <img src="/assets/images/Image-mypic.png" alt="profile-pic" />
+        <span>Lithira.</span>
+      </div>
       <nav class="navbar">
-        <div class="logo">
-          <img src="/assets/images/Image-mypic.png" alt="profile-pic" />
-          <span>Lithira.</span>
-        </div>
         <ul class="nav-links">
           <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <i class="fa fa-bars burger" id="burger" aria-hidden="true"></i>
+      <nav class="menu-panel" id="menu-panel-id">
+        <button class="close-btn" id="btn-close">&times;</button>
+        <ul>
+          <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#resume">Resume</a></li>
           <li><a href="#skills">Skills</a></li>
@@ -61,8 +73,8 @@
         </div>
         
         <p>
-          Hi, I'm Lithira Jayanaka, a passionate Software <br />
-          Developer focused on building innovative and <br />
+          Hi, I'm Lithira Jayanaka, a passionate Software
+          Developer focused on building innovative and
           impactful solutions.
         </p>
         <div class="social-link">
@@ -676,5 +688,6 @@
       </div>
     </footer>
     <script src="/js/ProjectModal.js"></script>
+    <script src="/js/MenuPanel.js"></script>
   </body>
 </html>

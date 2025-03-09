@@ -22,25 +22,17 @@ body {
 .header {
   width: 100%;
   background-color: #070707;
-  padding: 1rem 0;
+  padding: 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
   position: fixed;
   top: 0;
-  z-index: 2;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  z-index: 3;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  max-width: 1200px; 
-  margin: 0 auto; 
-  padding: 0 16px;
-}
+
 
 .logo {
   color: #fff;
@@ -83,29 +75,55 @@ body {
   color: #fccd2a;
 }
 
-/* @media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 1rem;
-  }
+/*Menu Panel*/
 
-  .nav-links {
-    flex-direction: column;
-    gap: 1rem;
-    width: 100%;
-  }
+#burger {
+  color: white;
+  font-size: 1.4rem;
+  cursor: pointer;
+  display: none;
+}
 
-  .nav-links li {
-    width: 100%;
-  }
+.menu-panel {
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  color: white;
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  transition: right 0.5s ease-in-out;
+}
+.menu-panel ul {
+  list-style: none;
+  padding: 50px 20px;
+}
+.menu-panel ul li {
+  margin-bottom: 16px;
+}
+.menu-panel ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+}
 
-  .nav-links li a {
-    width: 100%;
-    text-align: left;
-    padding: 0.5rem 0;
-  }
-} */
+.menu-panel ul li a:hover{
+  color: #fccd2a;
+  cursor: pointer;
+}
+
+.close-btn {
+  background: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  border: none;
+}
+
 
 /* ================== Hero Section ===============*/
 .hero-section .container {
@@ -203,6 +221,7 @@ body {
 .hero-content p {
   margin: 1em 0;
   text-align: left;
+  color: #ccc;
 }
 
 .hero-image{
@@ -540,20 +559,6 @@ body {
   color: #ccc;
 }
 
-/* @media screen and (max-width: 600px) {
-  .resume-item {
-    flex-direction: column;
-    text-align: center;
-  }
-  .item-date,
-  .item-detail {
-    width: 100%;
-    text-align: center;
-  }
-  .timeline {
-    display: none;
-  }
-} */
 
 /* =============================== Skills Section ==================================== */
 
@@ -997,7 +1002,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  padding: 48px;
+  padding: 4em;
   box-sizing: border-box;
   gap: 2em;
   width: 50%;
@@ -1011,7 +1016,7 @@ textarea {
   border: 1px solid #ccc;
   border-radius: 5px;
   resize: vertical;
-  margin: 1em 0em;
+  margin-bottom: 1em;
 }
 
 input[type="email"],
@@ -1022,7 +1027,7 @@ textarea {
   border: 1px solid #ccc;
   border-radius: 5px;
   resize: vertical;
-  margin: 1em 0em;
+  margin-bottom: 1em;
 }
 
 .send-btn {
@@ -1033,7 +1038,6 @@ textarea {
   cursor: pointer;
   float: left;
   color: #000;
-  margin: 1em 0em;
 }
 
 /* Footer Section */
