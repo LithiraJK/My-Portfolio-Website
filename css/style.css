@@ -158,6 +158,10 @@ body {
   padding: 0;
 }
 
+.f-nav-link li a:hover{
+  color: #fff;
+}
+
 .content-column {
   text-align: left;
   line-height: 2em;
