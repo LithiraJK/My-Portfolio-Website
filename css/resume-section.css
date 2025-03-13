@@ -84,11 +84,9 @@
   .tab-content .content {
     display: none;
   }
-  /* Show the Experience content when #tab-experience is checked */
   #tab-experience:checked ~ .tab-content .experience {
     display: block;
   }
-  /* Show the Education content when #tab-education is checked */
   #tab-education:checked ~ .tab-content .education {
     display: block;
   }
@@ -114,7 +112,27 @@
     margin: 2rem 0;
     padding: 1rem 1rem;
     gap: 50px;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
   }
+
+  @keyframes appear {
+    from{
+      opacity: 0;
+      scale: 0.5;
+      transform: translateY(100px);
+      /* clip-path: inset(100% 100% 0 0); */
+    }
+    to{
+      opacity: 1;
+      scale: 1;
+      transform: translateY(0px);
+      /* clip-path: inset(0 0 0 0); */
+
+    }
+  }
+
   .resume-item::before {
     content: "\f121";
     font-family: "Font Awesome 6 Free";
